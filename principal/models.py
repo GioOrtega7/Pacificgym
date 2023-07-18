@@ -461,7 +461,7 @@ class Tipoplan(models.Model):
     idtipoplan = models.IntegerField(primary_key=True)
     nombre = models.CharField(max_length=45, blank=True, null=True, db_comment='sirve para guardar el nombre de los planes')
     precio = models.CharField(max_length=45, blank=True, null=True, db_comment='sirve para guardar el precio de los planes ')
-
+    foto = models.CharField(max_length=45, blank=True, null=True, db_comment='sirve para guardar la foto de los planes')
     class Meta:
         managed = False
         db_table = 'tipoplan'
